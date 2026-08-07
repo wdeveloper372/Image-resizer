@@ -8,7 +8,7 @@ class ImageResizer:
     def __init__(self, root):
         self.root = root
         self.root.title("Image Resizer")
-        self.root.geometry("400x3555)
+        self.root.geometry("400x3555")
 
         self.file_path = ""
 
