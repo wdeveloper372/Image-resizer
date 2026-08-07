@@ -8,7 +8,7 @@ class ImageResizer:
     def __init__(self, root):
         self.root = root
         self.root.title("Image Resizer")
-        self.root.geometry("400x3555")
+        self.root.geometry("400x400")
 
         self.file_path = ""
 
@@ -77,4 +77,12 @@ class ImageResizer:
 if __name__ == "__main__":
     root = TkinterDnD.Tk()
     app = ImageResizer(root)
+    
+
+
+    #Bring the window to the front and keep it forward 
+    root.lift()
+    root.attributes('-topmost', True)
+
     root.mainloop()
+
